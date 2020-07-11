@@ -1,22 +1,19 @@
 import React from 'react';
 import { FormattedMessage } from 'react-intl';
 
-import A from './A';
-import Img from './Img';
 import NavBar from './NavBar';
 import HeaderLink from './HeaderLink';
-import logo from './logo.png';
 import messages from './messages';
-import {TopHeader, InnerHeader } from './style';
+import { TopHeader, InnerHeader } from './style';
 
 function Header() {
   return (
     <div>
-    <TopHeader>
-     <InnerHeader></InnerHeader> 
+      <TopHeader>
+        <InnerHeader />
       </TopHeader>
       <NavBar>
-        <HeaderLink to="/">
+        <HeaderLink to="/contact">
           <FormattedMessage {...messages.contact} />
         </HeaderLink>
         <HeaderLink to="/features">
