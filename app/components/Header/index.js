@@ -16,17 +16,17 @@ function Header() {
         <HeaderLink to="/contact">
           <FormattedMessage {...messages.contact} />
         </HeaderLink>
-        <HeaderLink to="/features">
+        <HeaderLink to="/team">
           <FormattedMessage {...messages.team} />
         </HeaderLink>
-        <HeaderLink to="/">
+        <HeaderLink to="/portfolio">
           <FormattedMessage {...messages.portfolio} />
         </HeaderLink>
-        <HeaderLink to="/">
-          <FormattedMessage {...messages.about} />
-        </HeaderLink>
-        <HeaderLink to="/">
+        <HeaderLink to="/product">
           <FormattedMessage {...messages.product} />
+        </HeaderLink>
+        <HeaderLink to="/about">
+          <FormattedMessage {...messages.about} />
         </HeaderLink>
       </NavBar>
     </div>

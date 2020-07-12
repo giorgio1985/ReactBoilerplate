@@ -33,5 +33,9 @@
   "boilerplate.containers.LocaleToggle.de": "de",
   "boilerplate.containers.LocaleToggle.en": "en",
   "boilerplate.containers.NotFoundPage.header": "Page not found.",
-  "boilerplate.containers.Contact.header": "Contacts"
+  "boilerplate.containers.Contact.header": "Contacts",
+  "boilerplate.containers.Team.header": "Team",
+  "boilerplate.containers.ShowPortfolio.header": "Portfolio",
+  "boilerplate.containers.About.header": "About",
+  "boilerplate.containers.Product.header": "Products"
 }

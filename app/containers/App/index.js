@@ -11,13 +11,15 @@ import { Helmet } from 'react-helmet';
 import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 import HomePage from 'containers/HomePage/Loadable';
-import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-
-import GlobalStyle from '../../global-styles';
 import Contact from '../Contact';
+import Team from '../Team';
+import Portfolio from '../Portfolio';
+import About from '../About';
+import Product from '../Product';
+import GlobalStyle from '../../global-styles';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -41,7 +43,10 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/contact" component={Contact} />
-        <Route path="/features" component={FeaturePage} />
+        <Route path="/team" component={Team} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/product" component={Product} />
+        <Route path="/about" component={About} />
         <Route path="/notFound" component={NotFoundPage} />
       </Switch>
       <Footer />
