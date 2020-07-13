@@ -19,14 +19,10 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import H1 from 'components/H1';
-import H2 from 'components/H2';
 import P from 'components/P';
-import ReposList from 'components/ReposList';
-import AtPrefix from './AtPrefix';
+import shop from 'images/shop.jpg';
+import SearchBar from '../SearchBar';
 import CenteredSection from './CenteredSection';
-import Form from './Form';
-import Input from './Input';
 import Section from './Section';
 import messages from './messages';
 import { loadRepos } from '../App/actions';
@@ -37,14 +33,7 @@ import saga from './saga';
 
 const key = 'home';
 
-export function HomePage({
-  username,
-  loading,
-  error,
-  repos,
-  onSubmitForm,
-  onChangeUsername,
-}) {
+export function HomePage({ username, onSubmitForm }) {
   useInjectReducer({ key, reducer });
   useInjectSaga({ key, saga });
 
@@ -53,11 +42,11 @@ export function HomePage({
     if (username && username.trim().length > 0) onSubmitForm();
   }, []);
 
-  const reposListProps = {
+  /* const reposListProps = {
     loading,
     error,
     repos,
-  };
+  }; */
 
   return (
     <article>
@@ -70,22 +59,20 @@ export function HomePage({
       </Helmet>
       <div>
         <CenteredSection>
-          <H1>
-            <FormattedMessage {...messages.startProjectHeader} />
-         </H1>
+          <img src={shop} alt="immagine" />
+
           <P>
             <FormattedMessage {...messages.startProjectMessage} />
           </P>
         </CenteredSection>
-        <Section>
-        
-        </Section>
-        
+        <Section />
+        <SearchBar>
+          <i className="fa fa-search" aria-hidden="true" />
+        </SearchBar>
       </div>
     </article>
   );
 }
-
 HomePage.propTypes = {
   loading: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.object, PropTypes.bool]),
