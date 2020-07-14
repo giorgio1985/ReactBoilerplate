@@ -13,6 +13,9 @@ function Header() {
         <InnerHeader />
       </TopHeader>
       <NavBar>
+        <HeaderLink to="/">
+          <FormattedMessage {...messages.home} />
+        </HeaderLink>
         <HeaderLink to="/contact">
           <FormattedMessage {...messages.contact} />
         </HeaderLink>
@@ -28,15 +31,12 @@ function Header() {
         <HeaderLink to="/about">
           <FormattedMessage {...messages.about} />
         </HeaderLink>
+        <HeaderLink to="/login">
+          <FormattedMessage {...messages.login} />
+        </HeaderLink>
       </NavBar>
     </div>
   );
 }
 
 export default Header;
-/*
-<A href="/">
-        <Img src={logo} alt="Personal - Logo" />
-       </A>
-
-*/

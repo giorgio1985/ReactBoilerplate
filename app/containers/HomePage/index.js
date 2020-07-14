@@ -21,6 +21,7 @@ import {
 } from 'containers/App/selectors';
 import P from 'components/P';
 import shop from 'images/shop.jpg';
+import Spot from './Spot';
 import SearchBar from '../SearchBar';
 import CenteredSection from './CenteredSection';
 import Section from './Section';
@@ -59,10 +60,12 @@ export function HomePage({ username, onSubmitForm }) {
       </Helmet>
       <div>
         <CenteredSection>
-          <img src={shop} alt="immagine" />
+          <img src={shop} alt="immagine shop" />
 
           <P>
-            <FormattedMessage {...messages.startProjectMessage} />
+            <Spot>
+              <FormattedMessage {...messages.startProjectMessage} />
+            </Spot>
           </P>
         </CenteredSection>
         <Section />

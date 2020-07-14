@@ -28,4 +28,12 @@ export default defineMessages({
     id: `${scope}.contact`,
     defaultMessage: 'contact',
   },
+  home: {
+    id: `${scope}.home`,
+    defaultMessage: 'home',
+  },
+  login: {
+    id: `${scope}.login`,
+    defaultMessage: 'login',
+  },
 });
