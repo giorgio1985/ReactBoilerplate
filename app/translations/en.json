@@ -1,12 +1,12 @@
 {
   "boilerplate.components.Footer.author.message": "Madeg with love by {author}.",
   "boilerplate.components.Footer.license.message": "This project is licensed under the MIT license.",
-  "boilerplate.components.Header.product": "PRODUCTS",
+  "boilerplate.components.Header.product": "PRODOTTI",
   "boilerplate.components.Header.about": "ABOUT",
   "boilerplate.components.Header.portfolio": "PORTFOLIO",
   "boilerplate.components.Header.team": "TEAM",
   "boilerplate.components.Header.home": "HOME",
-  "boilerplate.components.Header.contact": "CONTACT",
+  "boilerplate.components.Header.contact": "CONTATTI",
   "boilerplate.components.Header.login": "LOGIN",
   "boilerplate.containers.FeaturePage.css.header": "Features",
   "boilerplate.containers.FeaturePage.css.message": "Next generation CSS",
@@ -34,9 +34,9 @@
   "boilerplate.containers.LocaleToggle.de": "de",
   "boilerplate.containers.LocaleToggle.en": "en",
   "boilerplate.containers.NotFoundPage.header": "Page not found.",
-  "boilerplate.containers.Contact.header": "Contacts",
+  "boilerplate.containers.Contact.header": "Contatti",
   "boilerplate.containers.Team.header": "Team",
   "boilerplate.containers.ShowPortfolio.header": "Portfolio",
   "boilerplate.containers.About.header": "About",
-  "boilerplate.containers.Product.header": "Products"
+  "boilerplate.containers.Product.header": "Prodotti"
 }

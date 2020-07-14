@@ -19,8 +19,8 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import P from 'components/P';
 import shop from 'images/shop.jpg';
+import WelcomePage from './WelcomePage';
 import Spot from './Spot';
 import SearchBar from '../SearchBar';
 import CenteredSection from './CenteredSection';
@@ -58,21 +58,19 @@ export function HomePage({ username, onSubmitForm }) {
           content="A React.js Boilerplate application homepage"
         />
       </Helmet>
-      <div>
+      <WelcomePage>
         <CenteredSection>
           <img src={shop} alt="immagine shop" />
 
-          <P>
-            <Spot>
-              <FormattedMessage {...messages.startProjectMessage} />
-            </Spot>
-          </P>
+          <Spot>
+            <FormattedMessage {...messages.startProjectMessage} />
+          </Spot>
         </CenteredSection>
         <Section />
         <SearchBar>
           <i className="fa fa-search" aria-hidden="true" />
         </SearchBar>
-      </div>
+      </WelcomePage>
     </article>
   );
 }
