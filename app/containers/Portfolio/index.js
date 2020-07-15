@@ -15,6 +15,7 @@ import { compose } from 'redux';
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
 import HR from 'components/Hr';
+import { Parallax } from 'react-parallax';
 import makeSelectPortfolio from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -36,6 +37,10 @@ export function Portfolio() {
         <FormattedMessage {...messages.header} />
       </ShowPortfolio>
       <HR />
+
+      <Parallax>
+        <p>Working progress ...</p>
+      </Parallax>
     </div>
   );
 }
