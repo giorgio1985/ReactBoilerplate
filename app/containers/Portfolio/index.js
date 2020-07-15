@@ -14,6 +14,7 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import HR from 'components/Hr';
 import makeSelectPortfolio from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -34,6 +35,7 @@ export function Portfolio() {
       <ShowPortfolio>
         <FormattedMessage {...messages.header} />
       </ShowPortfolio>
+      <HR />
     </div>
   );
 }

@@ -13,11 +13,15 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import HR from 'components/Hr';
+import P from 'components/P';
+import H3 from 'components/H3';
 import ShowTeam from './ShowTeam';
 import makeSelectTeam from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
+import Section from '../Contact/Section';
 
 export function Team() {
   useInjectReducer({ key: 'team', reducer });
@@ -28,6 +32,11 @@ export function Team() {
       <ShowTeam>
         <FormattedMessage {...messages.header} />
       </ShowTeam>
+      <HR />
+      <Section>
+        <H3>Developer:</H3>
+        <P>Giorgio Adonoo</P>
+      </Section>
     </div>
   );
 }

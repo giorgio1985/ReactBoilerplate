@@ -19,18 +19,18 @@ import {
   makeSelectLoading,
   makeSelectError,
 } from 'containers/App/selectors';
-import shop from 'images/shop.jpg';
+
 import WelcomePage from './WelcomePage';
 import Spot from './Spot';
 import SearchBar from '../SearchBar';
 import CenteredSection from './CenteredSection';
-import Section from './Section';
 import messages from './messages';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import reducer from './reducer';
 import saga from './saga';
+import './homePage.css';
 
 const key = 'home';
 
@@ -60,16 +60,22 @@ export function HomePage({ username, onSubmitForm }) {
       </Helmet>
       <WelcomePage>
         <CenteredSection>
-          <img src={shop} alt="immagine shop" />
-
-          <Spot>
-            <FormattedMessage {...messages.startProjectMessage} />
-          </Spot>
+          <div className="parallax" />
+          <div>
+            <div>
+              <SearchBar>
+                <i className="fa fa-search" aria-hidden="true" />
+              </SearchBar>
+            </div>
+          </div>
+          <div className="parallax" />
+          <div>
+            <Spot>
+              <FormattedMessage {...messages.startProjectMessage} />
+            </Spot>
+          </div>
+          <div className="parallax" />
         </CenteredSection>
-        <Section />
-        <SearchBar>
-          <i className="fa fa-search" aria-hidden="true" />
-        </SearchBar>
       </WelcomePage>
     </article>
   );
@@ -109,3 +115,7 @@ export default compose(
   withConnect,
   memo,
 )(HomePage);
+
+/*
+
+*/
