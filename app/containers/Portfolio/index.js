@@ -50,25 +50,25 @@ export function Portfolio() {
       </ShowPortfolio>
       <HR />
 
-      <Parallax bgImage={hipster} strength={500}>
+      <Parallax bgImage={hipster} strength={200}>
         <div style={{ height: 500 }}>
           <div style={inlineStyle}>Primo progetto ...</div>
         </div>
       </Parallax>
       <h1 style={{ textAlign: 'center' }}> ||| </h1>
-      <Parallax bgImage={template1} strength={500}>
+      <Parallax bgImage={template1} strength={200}>
         <div style={{ height: 500 }}>
           <div style={inlineStyle}>Secondo progetto ...</div>
         </div>
       </Parallax>
       <h1 style={{ textAlign: 'center' }}> ||| </h1>
-      <Parallax bgImage={template2} strength={500}>
+      <Parallax bgImage={template2} strength={200}>
         <div style={{ height: 500 }}>
           <div style={inlineStyle}>Terzo progetto ...</div>
         </div>
       </Parallax>
 
-      <div style={{ height: '50vh' }} />
+      <div style={{ height: '25vh' }} />
     </div>
   );
 }

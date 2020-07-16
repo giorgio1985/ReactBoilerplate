@@ -13,11 +13,15 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import HR from 'components/Hr';
+import P from 'components/P';
+import H3 from 'components/H3';
 import makeSelectAbout from './selectors';
 import reducer from './reducer';
 import saga from './saga';
 import messages from './messages';
 import ShowAbout from './showAbout';
+import Section from '../Contact/Section';
 
 export function About() {
   useInjectReducer({ key: 'about', reducer });
@@ -28,6 +32,22 @@ export function About() {
       <ShowAbout>
         <FormattedMessage {...messages.header} />
       </ShowAbout>
+      <HR />
+      <Section>
+        <H3>Chi sono:</H3>
+        <P>Sono Giorgio nato a ....</P>
+      </Section>
+      <Section>
+        <H3>Obiettivi:</H3>
+        <P>
+          L&apos;obbiettivo di questa applicazione consiste nell&apos;aiutare le
+          persone a ....
+        </P>
+      </Section>
+      <Section>
+        <H3>Hobby:</H3>
+        <P>Giavellotto, lancio col disco ....</P>
+      </Section>
     </div>
   );
 }
