@@ -23,7 +23,7 @@ export function SearchBar() {
   useInjectSaga({ key: 'searchBar', saga });
 
   return (
-    <div>
+    <div style={{ height: '4em' }}>
       <Search>
         <input placeholder="search .." />
         <SearchIcon>
