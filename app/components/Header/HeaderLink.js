@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default styled(Link)`
-  color: grey;
+  color: black;
   padding: 0.3em;
   margin: 1.2em;
   margin-left: 0.5em;
@@ -12,7 +12,7 @@ export default styled(Link)`
   font-weight: bold;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   &:active {
-    background: #grey;
+    background: #white;
     color: #fff;
   }
 `;

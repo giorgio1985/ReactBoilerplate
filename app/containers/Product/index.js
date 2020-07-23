@@ -13,6 +13,8 @@ import { compose } from 'redux';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import { useInjectReducer } from 'utils/injectReducer';
+import Hr from 'components/Hr';
+import H3 from 'components/H3';
 import makeSelectProduct from './selectors';
 import reducer from './reducer';
 import saga from './saga';
@@ -28,6 +30,10 @@ export function Product() {
       <ShowProduct>
         <FormattedMessage {...messages.header} />
       </ShowProduct>
+      <Hr />
+      <div style={{ textAlign: 'center ' }}>
+        <H3>Working in progress ..</H3>
+      </div>
     </div>
   );
 }

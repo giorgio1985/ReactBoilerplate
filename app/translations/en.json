@@ -38,5 +38,6 @@
   "boilerplate.containers.Team.header": "Team",
   "boilerplate.containers.ShowPortfolio.header": "Portfolio",
   "boilerplate.containers.About.header": "About me",
-  "boilerplate.containers.Product.header": "Prodotti"
+  "boilerplate.containers.Product.header": "Prodotti",
+  "boilerplate.containers.Login.header": "Login"
 }

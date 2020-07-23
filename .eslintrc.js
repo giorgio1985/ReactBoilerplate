@@ -52,7 +52,13 @@ module.exports = {
         controlComponents: ['Input'],
       },
     ],
-    'jsx-a11y/label-has-for': 0,
+    'jsx-a11y/label-has-for': [ 2, {
+      "components": [ "Label" ],
+      "required": {
+          "some": [ "nesting", "id" ]
+      },
+      "allowChildren": false,
+  }],
     'jsx-a11y/mouse-events-have-key-events': 2,
     'jsx-a11y/role-has-required-aria-props': 2,
     'jsx-a11y/role-supports-aria-props': 2,
